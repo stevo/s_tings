@@ -1,0 +1,8 @@
+<% form_tag update_all_settings_path, :method => :put do %>
+  <ul class="settings_list">
+    <% @settings.each do |key,var| %>
+      <li><label><%= key.humanize %></label><%= settings_field_for(key,var) %> <%= link_to "default", setting_path(key), :confirm => "Are you sure? This action can not be revert.", :method => :delete %></li>
+    <% end %>
+  </ul>
+  <%= submit_tag %>
+<% end %>
