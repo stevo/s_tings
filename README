@@ -1,29 +1,19 @@
 STings
 ======
-TODO
 
- Publish
- Cache
+DB Stored general application settings
 
 
-ruby script/plugin install -x https://svn.seleo.com/base/s_tings
+ruby script/plugin install git://github.com/stevo/s_tings.git
 
 Setup
 
-You must create the table used by the Settings model. Simply run this command:
-
   ruby script/generate settings_migration
-
-Now just put that migration in the database with:
-
   rake db:migrate
 
 
 
-Example
-=======
+Author::    Blazej "Stevo" Kosmowski (b.kosmowski@selleo.com)
+Copyright:: Copyright (c) 2009 selleo.com
+License::   Distributes under the same terms as Ruby
 
-
-
-
-Copyright (c) 2009 Stevo [Selleo], released under the MIT license
