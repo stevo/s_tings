@@ -1,5 +1,4 @@
-#TODO Publish plugin
-class Settings
+class SettingsDefaults
   DEFAULTS = {
       :setting_name => "setting_value"
   }
